@@ -85,8 +85,9 @@ a:hover {
 .slide_container {
   display: flex;
   cursor: pointer;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
+.slide_container::-webkit-scrollbar { display: none; }
 .slide_container img {
   height: calc(100vh - 100px);
   margin: 0 0.5em;

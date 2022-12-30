@@ -3,6 +3,10 @@ let isDown = false;
 let startX;
 let scrollLeft;
 
+window.addEventListener("wheel", function (e) {
+  if (e.deltaY > 0) slider.scrollLeft += 100;
+  else slider.scrollLeft -= 100;
+});
 slider.addEventListener('mousedown', e => {
   isDown = true;
   slider.classList.add('active');
