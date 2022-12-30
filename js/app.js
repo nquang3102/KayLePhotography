@@ -28,7 +28,6 @@ slider.addEventListener('mousemove', e => {
   const SCROLL_SPEED = 1;
   const walk = (x - startX) * SCROLL_SPEED;
   slider.scrollLeft = scrollLeft - walk;
-  console.log(startX);
 });
 
 document.querySelectorAll('.slide_container').forEach((slide) => {
@@ -102,6 +101,5 @@ document.querySelectorAll('.slide_container').forEach((slide) => {
       else { page.innerHTML = item.children[0].getAttribute('name') + " / " + items.length; }
     });
     scrollTo(item);
-    console.log(item.children[0].getAttribute('name'));
   });
 });
